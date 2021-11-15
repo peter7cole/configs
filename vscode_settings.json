@@ -25,13 +25,14 @@
   },
   "editor.formatOnSave": true,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#212121", // #1A1A1A
+    "statusBar.background": "#212121",
     "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#212121" // #263238
+    "statusBar.debuggingBackground": "#212121"
   },
   "editor.tokenColorCustomizations": {
-    "comments": "#4E4A4A", // 5#353131 10#423E3E 15#4E4A4A 20#5B5757 base #282424
-    "strings": "#bae67e",
-    "functions": "#ffd580"
+    "comments": "#474343",
+    "functions": "#ffd580",
+    "numbers": "#c3a6ff",
+    "strings": "#bae67e"
   }
 }
