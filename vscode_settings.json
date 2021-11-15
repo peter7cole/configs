@@ -1,33 +1,37 @@
 // ~/Library/Application Support/Code/User/settings.json
 
 {
-    "editor.wordWrap": "on",
-    "terminal.integrated.scrollback": 20000,
-    "terminal.integrated.tabs.enabled": true,
-    "gitlens.codeLens.enabled": false,
-    "gauge.welcomeNotification.showOn": "never",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tabSize": 2,
-    "workbench.startupEditor": "none",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "gauge.recommendedSettings.options": "Ignore",
-    "prettier.singleQuote": true,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.zoomLevel": 1,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "editor.tokenColorCustomizations": {
-        "comments": "#4E4A4A", // 5#353131 10#423E3E 15#4E4A4A 20#5B5757 base #282424
-        "strings": "#bae67e",
-        "functions": "#ffd580",
-    },
+  "editor.wordWrap": "on",
+  "terminal.integrated.scrollback": 20000,
+  "terminal.integrated.tabs.enabled": true,
+  "gitlens.codeLens.enabled": false,
+  "gauge.welcomeNotification.showOn": "never",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "gauge.recommendedSettings.options": "Ignore",
+  "prettier.singleQuote": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#212121", // #1A1A1A
+    "statusBar.noFolderBackground": "#212121",
+    "statusBar.debuggingBackground": "#212121" // #263238
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#4E4A4A", // 5#353131 10#423E3E 15#4E4A4A 20#5B5757 base #282424
+    "strings": "#bae67e",
+    "functions": "#ffd580"
+  }
 }
-
