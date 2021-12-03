@@ -7,7 +7,9 @@
 
 ## Contents
 
-- `brew_list.md`: list of Homebrew formulae and casks
-- `vscode_settings.json`: work vscode settings
-- `zshrc.txt`: oh-my-zsh config
+| File                   | Description                         |
+| ---------------------- | ----------------------------------- |
+| `brew_list.md`         | list of Homebrew formulae and casks |
+| `vscode_settings.json` | work vscode settings                |
+| `zshrc.txt`            | oh-my-zsh config                    |
 
