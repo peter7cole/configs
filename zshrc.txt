@@ -64,7 +64,7 @@ alias gact='git add src/translations/locales/en-US.json; git commit -m "fix: tra
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gd='git diff'
-alias gdm='git diff master'
+alias gdm='git diff upstream/master'
 alias gcm='git checkout master'
 alias gcpm='git checkout master; git pull upstream master'
 alias gpm='git pull upstream master'
@@ -73,7 +73,9 @@ alias gl3='git log -3'
 alias gr='git remote -v'
 alias gc.='git checkout .'
 alias gcb='git checkout -b'
-
+alias gco='git checkout'
+alias gst='git stash'
+alias gsta='git stash apply'
 
 # Yarn Aliases
 
@@ -109,3 +111,4 @@ alias ytdu='yarn test:gauge --env=dev --tags=dynamic-user'
 # ZSH_CUSTOM=/path/to/new-custom-folder
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
+
