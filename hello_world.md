@@ -27,7 +27,8 @@
   `nvm install 16`  
   `nvm alias default 16`  
   `nvm ls-remote --lts`  
-  `nvm ls`
+  `nvm ls`  
+  `nvm use <a_version_that_is_installed>`
 
 ## VS Code
 
