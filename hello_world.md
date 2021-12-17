@@ -26,7 +26,7 @@
 - Install Node via command line  
   `% nvm install 16`  
   `% nvm alias default 16`
-- Other commands
+- Other commands  
   `% nvm ls-remote --lts`  
   `% nvm ls`  
   `% nvm use <a_version_that_is_installed>`
