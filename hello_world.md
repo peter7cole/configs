@@ -24,11 +24,12 @@
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
   ```
 - Install Node via command line  
-  `nvm install 16`  
-  `nvm alias default 16`  
-  `nvm ls-remote --lts`  
-  `nvm ls`  
-  `nvm use <a_version_that_is_installed>`
+  `% nvm install 16`  
+  `% nvm alias default 16`
+- Other commands
+  `% nvm ls-remote --lts`  
+  `% nvm ls`  
+  `% nvm use <a_version_that_is_installed>`
 
 ## VS Code
 
