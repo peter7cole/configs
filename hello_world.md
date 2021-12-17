@@ -14,15 +14,15 @@
 ## Node
 
 - [Install via nvm](https://github.com/nvm-sh/nvm)
-- Install via curl  
-  `% curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
-- Running the above command downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add
-  the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`)  
-  
-  ```shell
-  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-  ```
+  - Install nvm via curl  
+    `% curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
+  - Running the above command downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add
+    the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`)
+
+    ```shell
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+    ```
 - Install Node via command line  
   `% nvm install 16`  
   `% nvm alias default 16`
