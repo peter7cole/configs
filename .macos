@@ -1,0 +1,15 @@
+
+# source https://github.com/kentcdodds/dotfiles/blob/master/.macos
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Use column view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
+# Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
