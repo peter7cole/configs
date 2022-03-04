@@ -37,6 +37,7 @@ alias bu='echo "update..."; brew update;
 	echo "cleanup..."; brew cleanup;
 	echo "casks..."; brew list --cask;
 	echo "done"'
+alias buc='brew upgrade --cask'
 alias work='cd <work>; git status' # code . -r; 
 alias echothis='echo $@'
 alias ll='ls -la'
@@ -48,11 +49,9 @@ alias whatkernel='uname -a'
 alias whatpackages='npm list --g --depth=0'
 alias whatsize='du -sh .'
 alias whatpid="ps -ax | grep $1"
+alias zrc='open ~/.zshrc'
 
 # sudo_periodic_daily_weekly_monthly
-
-
-alias zrc='open ~/.zshrc'
 
 
 # Git Aliases
@@ -60,8 +59,7 @@ alias zrc='open ~/.zshrc'
 alias gs='git status'
 alias ga='git add .; git status'
 alias gc='git commit -m'
-alias gact='git add src/translations/locales/en-US.json; git commit -m "fix: translations"'
-alias gb='git branch'
+alias gb='git branch -vv'
 alias gbd='git branch -D'
 alias gd='git diff'
 alias gdm='git diff upstream/master'
