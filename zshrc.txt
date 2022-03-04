@@ -1,4 +1,5 @@
 ZSH_THEME="robbyrussell"
+export ZSH="/Users/$(whoami)/.oh-my-zsh"
 
 plugins=(
 	git
