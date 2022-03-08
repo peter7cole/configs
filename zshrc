@@ -32,24 +32,29 @@ export NVM_DIR="$HOME/.nvm"
 
 # Shell Aliases
 
-alias bu='echo "update..."; brew update;
-	echo "outdated..."; brew outdated;
-	echo "upgrade..."; brew upgrade;
-	echo "cleanup..."; brew cleanup;
-	echo "casks..."; brew list --cask;
-	echo "done"'
+alias bu='echo "--- homebrew update"; brew update;
+	echo "--- outdated"; brew outdated;
+	echo "--- upgrade"; brew upgrade;
+	echo "--- cleanup"; brew cleanup;
+	echo "--- casks"; brew list --cask;
+	echo "--- done"'
 alias buc='brew upgrade --cask'
 # alias work='cd <work>; git status' # code . -r; 
-alias echothis='echo $@'
+alias c.='code .'
+alias echothis='echo $1'
+alias l="osascript -e 'repeat with i from 0 to 3840' -e 'log i / 2' -e 'tell application \"System Events\" to keystroke \"_\"' -e 'delay 30' -e 'end repeat';"
 alias ll='ls -la'
 alias ns='node server.js'
 alias nms='nodemon server.js'
+alias settings='code ~/Library/Application\ Support/Code/User/settings.json'
+alias s256="shasum -a 256 $1" # add filepath
+alias update='source ./.zshrc'
 alias whatip='curl http://ipecho.net/plain; echo'
 alias whatres='system_profiler SPDisplaysDataType | grep Resolution'
 alias whatkernel='uname -a'
 alias whatpackages='npm list --g --depth=0'
 alias whatsize='du -sh .'
-alias whatpid="ps -ax | grep $1"
+alias whatpid='ps -ax | grep $1'
 alias zrc='open ~/.zshrc'
 
 # sudo_periodic_daily_weekly_monthly
