@@ -39,7 +39,7 @@ alias bu='echo "update..."; brew update;
 	echo "casks..."; brew list --cask;
 	echo "done"'
 alias buc='brew upgrade --cask'
-alias work='cd <work>; git status' # code . -r; 
+# alias work='cd <work>; git status' # code . -r; 
 alias echothis='echo $@'
 alias ll='ls -la'
 alias ns='node server.js'
