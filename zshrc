@@ -1,14 +1,17 @@
+# zsh Config
+
 ZSH_THEME="robbyrussell"
 export ZSH="/Users/$(whoami)/.oh-my-zsh"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export HOMEBREW_INSTALL_BADGE='🥳'
+
+source $ZSH/oh-my-zsh.sh
 
 plugins=(
 	git
 	macos
 	web-search
 )
-
-source $ZSH/oh-my-zsh.sh
-
 
 # User configuration
 
@@ -28,7 +31,6 @@ export NVM_DIR="$HOME/.nvm"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-
 
 # Shell Aliases
 
@@ -57,9 +59,6 @@ alias whatsize='du -sh .'
 alias whatpid='ps -ax | grep $1'
 alias zrc='open ~/.zshrc'
 
-# sudo_periodic_daily_weekly_monthly
-
-
 # Git Aliases
 
 alias gs='git status'
@@ -67,17 +66,21 @@ alias ga='git add .; git status'
 alias gc='git commit -m'
 alias gb='git branch -vv'
 alias gbd='git branch -D'
-alias gd='git diff'
-alias gdm='git diff upstream/master'
-alias gcm='git checkout master'
-alias gcpm='git checkout master; git pull upstream master'
-alias gpm='git pull upstream master'
-alias gl='git log'
-alias gl3='git log -3'
-alias gr='git remote -v'
 alias gc.='git checkout .'
 alias gcb='git checkout -b'
+alias gcm='git checkout master'
 alias gco='git checkout'
+alias gcpm='git checkout master; git pull upstream master'
+alias gd='git diff'
+alias gdm='git diff upstream/master'
+alias gpm='git pull upstream master'
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
+alias glg='git log --graph'
+alias glgo='git log --graph --oneline'
+alias gl2='glgo -2'
+alias gr='git remote -v'
+alias grh1='git reset HEAD^' # reset to last commit
+alias grh2='git reset HEAD~2' # reset to two commits back
 alias gst='git stash'
 alias gsta='git stash apply'
 
@@ -89,7 +92,7 @@ alias ybt='yarn build:translations'
 alias ys='yarn start'
 alias yt='yarn test'
 alias ytg='yarn test:gauge --env=dev'
-alias ytdu='yarn test:gauge --env=dev --tags=dynamic-user'
+alias ytd='yarn test:gauge --env=dev --tags=dynamic-user'
 
 
 # Other Info
@@ -115,4 +118,3 @@ alias ytdu='yarn test:gauge --env=dev --tags=dynamic-user'
 # ZSH_CUSTOM=/path/to/new-custom-folder
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-
