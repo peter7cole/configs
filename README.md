@@ -12,4 +12,4 @@
 | `brew_list.md`         | list of Homebrew formulae and casks |
 | `hello_world.md`       | instructions for env setup          |
 | `vscode_settings.json` | work vscode settings                |
-| `zshrc.txt`            | oh-my-zsh config                    |
+| `zshrc`                | oh-my-zsh config                    |
