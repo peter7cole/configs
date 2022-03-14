@@ -46,6 +46,7 @@ alias c.='code .'
 alias echothis='echo $1'
 alias l="osascript -e 'repeat with i from 0 to 3840' -e 'log i / 2' -e 'tell application \"System Events\" to keystroke \"_\"' -e 'delay 30' -e 'end repeat';"
 alias ll='ls -la'
+alias mp4tomkv='for f in *.mp4; do mv "$f" "${f/mp4/mkv}"; done'
 alias ns='node server.js'
 alias nms='nodemon server.js'
 alias settings='code ~/Library/Application\ Support/Code/User/settings.json'
