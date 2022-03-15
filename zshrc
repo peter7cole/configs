@@ -43,9 +43,11 @@ alias bu='echo "--- homebrew update"; brew update;
 alias buc='brew upgrade --cask'
 # alias work='cd <work>; git status' # code . -r; 
 alias c.='code .'
+alias c2='cal -A 2'
 alias echothis='echo $1'
 alias l="osascript -e 'repeat with i from 0 to 3840' -e 'log i / 2' -e 'tell application \"System Events\" to keystroke \"_\"' -e 'delay 30' -e 'end repeat';"
 alias ll='ls -la'
+function mkcd() { mkdir $1 && cd $1 }
 alias mp4tomkv='for f in *.mp4; do mv "$f" "${f/mp4/mkv}"; done'
 alias ns='node server.js'
 alias nms='nodemon server.js'
@@ -90,12 +92,29 @@ alias gsta='git stash apply'
 # alias yy='open -na "Google Chrome" --args "http://localhost:4000/"; yarn start;'
 # alias yyi='open -na "Google Chrome" --args --incognito "http://localhost:4000/"; yarn start;'
 alias ybt='yarn build:translations'
-alias ylinks='( ls -l node_modules ; ls -l node_modules/@* ) | grep ^l'
+alias ylinks='(ls -l node_modules && ls -l node_modules/@*) | grep ^l'
 alias ys='yarn start'
 alias yt='yarn test'
 alias ytg='yarn test:gauge --env=dev'
 alias ytd='yarn test:gauge --env=dev --tags=dynamic-user'
 
+## custom functions
+# source: https://pastebin.com/raw/UWHMV2QF
+
+# gpr() {
+#   if [ $? -eq 0 ]; then
+#     github_url=`git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@' -e 's%\.git$%%'`;
+#     branch_name=`git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3`;
+#     pr_url=$github_url"/compare/master..."$branch_name
+#     open $pr_url;
+#   else
+#     echo 'failed to open a pull request.';
+#   fi
+# }
+
+# commands() {
+#   awk '{a[$2]++}END{for(i in a){print a[i] " " i}}'
+# }
 
 # Other Info
 
