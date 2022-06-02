@@ -40,12 +40,13 @@ alias bu='echo "--- homebrew update"; brew update;
 	echo "--- cleanup"; brew cleanup;
 	echo "--- casks"; brew list --cask;
 	echo "--- done"'
+alias blc='brew list --cask'
 alias buc='brew upgrade --cask'
 # alias work='cd <work>; git status' # code . -r; 
 alias c.='code .'
 alias c2='cal -A 2'
 alias echothis='echo $1'
-alias l="osascript -e 'repeat with i from 0 to 3840' -e 'log i / 2' -e 'tell application \"System Events\" to keystroke \"_\"' -e 'delay 30' -e 'end repeat';"
+alias l="osascript -e 'repeat with i from 0 to 1920' -e 'tell application \"System Events\" to keystroke \"_\"' -e 'log i*2' -e 'delay 120' -e 'end repeat';"
 alias ll='ls -la'
 function mkcd() { mkdir $1 && cd $1 }
 alias mp4tomkv='for f in *.mp4; do mv "$f" "${f/mp4/mkv}"; done'
@@ -66,9 +67,9 @@ alias zrc='open ~/.zshrc'
 
 alias gs='git status'
 alias ga='git add .; git status'
-alias gc='git commit -m'
 alias gb='git branch -vv'
 alias gbd='git branch -D'
+alias gc='git commit -m'
 alias gc.='git checkout .'
 alias gcb='git checkout -b'
 alias gcm='git checkout master'
@@ -76,6 +77,12 @@ alias gco='git checkout'
 alias gcpm='git checkout master; git pull upstream master'
 alias gd='git diff'
 alias gdm='git diff upstream/master'
+alias gp='git push origin $(git branch --show-current)'
+function gacp() {
+	git add . &&
+	git commit -m "$1" &&
+	git push origin $(git branch --show-current)
+}
 alias gpm='git pull upstream master'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
 alias glg='git log --graph'
