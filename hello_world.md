@@ -37,14 +37,23 @@
   `% brew install --cask visual-studio-code`
 - Install extensions
   - Bracket Pair Colorizer
+  - change-case
+  - Complete JSDoc Tags
+  - CSSLint
+  - ES7+ React/Redux/React-Native snippets
   - ESLint
   - TSLint
   - Gauge
   - GitLens
   - Halcyon Theme
+  - Highlight Matching Tag
+  - Import Cost
   - indent-rainbow
   - Jest Runner
+  - markdownlint
   - Prettier - Code formatter
+  - Rewrap
+  - TSLint
 
 ## oh-my-zsh
 
