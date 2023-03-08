@@ -42,6 +42,7 @@ alias bu='echo "--- homebrew update"; brew update;
 	echo "--- done"'
 alias blc='brew list --cask'
 alias buc='brew upgrade --cask'
+alias bucf='brew reinstall --cask --force'
 # alias work='cd <work>; git status' # code . -r; 
 alias c.='code .'
 alias c2='cal -A 2'
